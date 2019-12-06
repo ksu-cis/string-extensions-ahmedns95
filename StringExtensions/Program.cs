@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ExtensionMethods;
 
 namespace StringExtensions
 {
@@ -25,9 +26,29 @@ namespace StringExtensions
             foreach(string s in writings)
             {
                 Console.WriteLine(s);
+                Console.WriteLine($"Word Count{s.WordCount()}");
                 Console.WriteLine("---------------------------");
             }
+
+            foreach(string s in writings)
+            {
+                Console.WriteLine(s.Captalize());
+                Console.WriteLine("---------------------------");
+            }
+            foreach (string s in writings)
+            {
+                s.DeCaptalize();
+                Console.WriteLine(s);
+                Console.WriteLine("---------------------------");
+            }
+
+           
+             s.DeCaptalize();
+             Console.WriteLine("---------------------------");
             
+
+
+
         }
     }
 }
